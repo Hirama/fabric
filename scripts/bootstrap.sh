@@ -6,7 +6,7 @@
 #
 
 # if version not passed in, default to latest released version
-export VERSION=1.4.0-rc1
+export VERSION=1.3.0
 # if ca version not passed in, default to latest released version
 export CA_VERSION=$VERSION
 # current version of thirdparty images (couchdb, kafka and zookeeper) released
@@ -170,8 +170,8 @@ dockerInstall() {
   fi
 }
 
-DOCKER=true
-SAMPLES=true
+DOCKER=false
+SAMPLES=false
 BINARIES=true
 
 # Parse commandline args pull out
